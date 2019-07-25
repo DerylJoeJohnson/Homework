@@ -9,22 +9,24 @@
     function getnumber()
     {   
         var n1=document.getElementById("number1").value;
-       
+        var a=parseInt(n1)
         var n;
-        if(n1%2==0)
+        if(a%2==0)
         {
-            n=n1;
-        console.log(n1+"is even");
+            n=a;
+        console.log(a+"is even");
         alert(n +" is even");
+        document.getElementById("result").innerHTML=n;
         }
         else
         {   
-            n=n1;
-            console.log(n1+ "is odd");
+            n=a;
+            console.log(a+ "is odd");
             alert(n +" is odd");
+            document.getElementById("result").innerHTML=n;
         }
         
-        document.getElementById("result").innerHTML-n;
+        
 
     }
     </script>
@@ -47,7 +49,7 @@
                 <td><button type="button" class="btn btn-success" onclick="getnumber();">Odd or Even</button></td>
             </tr>
             <tr>
-                <td>\
+                <td>
                     <p id="result"></p>
                 </td>
             </tr>

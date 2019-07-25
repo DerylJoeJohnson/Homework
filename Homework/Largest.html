@@ -10,21 +10,25 @@
     {   
         var n1=document.getElementById("number1").value;
         var n2=document.getElementById("number2").value;
+        var a=parseInt(n1);
+        var b=parseInt(n2);
         var n;
-        if(n1>n2)
+        if(a>b)
         {
-            n=n1;
-        console.log(n1+"is the larger number");
+            n=a;
+        console.log(a+"is the larger number");
         alert(n +" is the largest");
+        document.getElementById("result").innerHTML=n;
         }
         else
         {   
-            n=n2;
-            console.log(n2+ "is the larger number");
+            n=b;
+            console.log(b+ "is the larger number");
             alert(n +" is the largest");
+            document.getElementById("result").innerHTML=n;
         }
         
-        document.getElementById("result").innerHTML-n;
+        
 
     }
     </script>
@@ -51,7 +55,7 @@
                 <td><button type="button" class="btn btn-success" onclick="getnumber();">Largest</button></td>
             </tr>
             <tr>
-                <td>\
+                <td>
                     <p id="result"></p>
                 </td>
             </tr>
